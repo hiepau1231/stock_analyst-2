@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.authentication',  # Enable the authentication app
     'apps.home'  # Enable the inner home (home)
 ]
 
@@ -51,7 +52,7 @@ TEMPLATE_DIR = os.path.join(CORE_DIR, "apps/templates")  # ROOT dir for template
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_DIR],
+        'DIRS': [os.path.join(CORE_DIR, 'apps/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
