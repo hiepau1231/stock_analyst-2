@@ -2,13 +2,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Argon Dashboard CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Stock Analysis Dashboard</title>
+    
+    <!-- Argon CSS -->
     <link href="{% static 'css/argon-dashboard.css' %}" rel="stylesheet" />
-    ...
 </head>
 <body>
-    ...
-    <!-- Argon Dashboard JS -->
+    <!-- Sidenav -->
+    <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+        <!-- Sidenav content here -->
+    </nav>
+    
+    <!-- Main content -->
+    <div class="main-content" id="panel">
+        <!-- Topnav -->
+        <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+            <!-- Navbar content here -->
+        </nav>
+        
+        <!-- Header -->
+        <div class="header bg-primary pb-6">
+            <!-- Header content here -->
+        </div>
+        
+        <!-- Page content -->
+        {% block content %}
+        <!-- Existing dashboard content -->
+        {% endblock %}
+    </div>
+    
+    <!-- Argon JS -->
     <script src="{% static 'js/argon-dashboard.js' %}"></script>
 </body>
 </html>
