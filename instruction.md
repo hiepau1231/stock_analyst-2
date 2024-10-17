@@ -185,3 +185,8 @@ A clear and organized project structure is crucial for maintainability and scala
 -----------------------------------------------------------------------------
 Web Scraping: Use a web scraping tool to gather real-time data for stock prices and financial reports from the market. This data will be updated regularly.
 use this template : https://www.creative-tim.com/product/argon-dashboard-django
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+DOCS:
+
+https://docs.djangoproject.com/en/5.1/topics/migrations/ 
